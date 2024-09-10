@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input-container {
+    position: relative;
+    width: 100%; /* You can adjust this width as needed */
+    max-width: 600px;
+}
+.search-input {
+    width: 100%;
+    padding-left: 40px; /* To make space for the search icon */
+    padding-right: 40px; /* To make space for the browse icon */
+}
+.search-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.browse-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
