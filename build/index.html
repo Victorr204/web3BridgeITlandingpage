@@ -6,7 +6,7 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="/web3BridgeITlandingpage/build/css/style.css">
 </head>
-<body class="min-h-screen w-screen p-0 m-0 bg-black text-white">
+<body class="min-h-screen w-screen p-0 m-0 bg-gray-900 text-white">
 
     <!-- Header section -->
     <header class="flex bg-transparent h-14 w-screen">
@@ -15,12 +15,12 @@
         </h1>
         <section class="flex mx-auto items-center">
             <!-- Home option -->
-            <a href="#" class="p-0 pt-1 pb-1 pl-1 pr-1 items-center w-5 m-0 bg-slate-700 rounded-full">⌂</a>
+            <a href="#" class="p-0 pt-1 pb-1 pl-1 pr-1 items-center w-5 m-0 bg-slate-700 rounded-full ">⌂</a>
 
             <!-- Input container with search and browse buttons -->
-            <div class="input-container ">
+            <div class="input-container">
                 <!-- Search input -->
-                <input type="search" name="name" id="searchInput" placeholder="What do you want to play?" class="search-input border border-gray-500 border-solid bg-gray-500  placeholder:text-white  placeholder:opacity-65 rounded-3xl h-10 text-center mt-1 ml-3 mr-5 ">
+                <input type="search" name="name" id="searchInput" placeholder="What do you want to play?" class="search-input border border-gray-500 border-solid bg-gray-500 bg-opacity-60  placeholder:text-white  placeholder:opacity-65 rounded-3xl h-10 text-center mt-1 ml-3 mr-5 ">
 
                 <!-- Search button (left) -->
                 <button class="search-button" onclick="activateSearch()">
@@ -35,7 +35,7 @@
         </section>
 
         <!-- Sign up and Log in buttons -->
-        <section class="flex items-center justify-end">
+        <section class=" items-center justify-end flex">
             <ul class="flex items-center space-x-4 mr-6">
                 <li>
                     <button class="p-7 mt-1 text-slate-400 font-bold hover:text-white">Sign up</button>
@@ -47,12 +47,14 @@
         </section>
     </header>
 
+    <!--here is the main section-->
     <main>
+        <!--section-->
         <section class="bg-gray-500 bg-opacity-50 border border-gray-500 w-96 m-0 ml-3 mt-1 p-0 pl-5 pt-2 min-h-fit fixed rounded-2xl">
             <!--area 1-->
-            <div>
+            <div class="flex ">
                 <img src="" alt="">
-                <h4 class="text-white font-bold opacity-40 mb-10">Your Library</h4>
+                <h4 title="collapse your library" class="text-white font-bold opacity-40 mb-10 ">Your Library</h4>
             </div>
             <!--area 2-->
             <div class="bg-slate-500 border border-slate-500 rounded-3xl p-4 mr-4 bg-opacity-35 mb-9 pb-0">
@@ -62,13 +64,44 @@
             </div>
             <!--area 3-->
             <div class="bg-slate-500 border border-slate-500 rounded-3xl p-4 mr-4 bg-opacity-35 mb-9 pb-0">
-                <h4 class="text-white font-bold ">Let's find some podcasts to follow</h4>
+                <h4 class="text-white font-bold cursor-">Let's find some podcasts to follow</h4>
                 <p class="text-sm mt-1 mb-4">We'll keep you updated on new episodes</p>
                 <button class="bg-white border border-white rounded-2xl text-black font-bold pl-3 pr-3 mt-3 mb-12 hover:bg-white hover:opacity-65">Browse podcasts</button>
             </div>
+
+            <div class="space-x-3 font-thin font leading-7 text-xs">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy </a>
+                <a href="#">cookies</a>
+                <br>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+                <br>
+                <a href="#" class="hover:underline decoration-double">Cookies</a>
+                <br>
+                
+            </div>
+            <div class="mt-16 pb-4">
+                <button class="border border-white font-bold p-1 text-white bg-black rounded-3xl bg-opacity-50 border-opacity-50 hover:bg-black hover:opacity-100 hover:border hover:border-white hover:border-opacity-100 pl-3 pr-4">&#127760;English</button>
+            </div>
+            
         </section>
         <section>
 
         </section>
     </main>
+
+    <!--here is the footer section-->
+    <footer class="flex w-screen h-20 p-3 m-0 bottom-0 fixed bg-gradient-to-r from-fuchsia-500 to-blue-500">
+        <div class="font-semibold ">
+            <a href="#">Preview of Spotify</a>
+            <br>
+            <a href="#">Sign up to get unlimited songs and podcasts with occasional ads.</a>  <a href="#">No credit card needed</a>
+        </div>
+       
+        <nav class="flex items-center justify-end flex-grow mt-4 ml-5 font-bold">
+            <button class="border border-white text-black bg-white m-0 rounded-3xl pl-5 pr-5 pt-2 pb-2 hover:bg-white hover:bg-opacity-60">Sign up free</button>
+        </nav>
+    </footer>
     </body>
